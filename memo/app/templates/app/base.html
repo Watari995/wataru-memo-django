@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wataru's memo</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
+</head>
+
+<body>
+  <h1>Wataru's memo by Django</h1>
+
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
